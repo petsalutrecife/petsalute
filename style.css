@@ -1,0 +1,1159 @@
+/* ==========================================================================
+   PET SALUTE - PALETA OFICIAL EXTRAÍDA & DESIGN SYSTEM MODERNO
+   Cores Oficiais: Verde Limão (#8DC63F), Azul Petróleo (#16324F), Verde Escuro (#2E6B34)
+   ========================================================================== */
+
+:root {
+  /* Paleta Oficial da Pet Salute */
+  --ps-green: #8DC63F;          /* Verde oficial do "pet" e coração */
+  --ps-green-dark: #2E6B34;     /* Verde folha escuro da tigela e nutrição */
+  --ps-green-light: #F2F8E9;    /* Verde bem claro para fundos e tags */
+  --ps-green-hover: #7CB32F;
+
+  --ps-blue: #16324F;           /* Azul petróleo profundo de "salute" */
+  --ps-blue-light: #EBF1F7;     /* Azul claro para contrastes suaves */
+  --ps-blue-hover: #0F2338;
+
+  --ps-golden: #E59837;         /* Dourado caramelo acolhedor */
+  --ps-golden-light: #FEF6EC;
+
+  /* Superfícies & Fundos */
+  --bg-page: #F8FAF4;           /* Fundo off-white orgânico suave */
+  --bg-white: #FFFFFF;
+  --bg-card: #FFFFFF;
+
+  /* Textos */
+  --text-dark: #16324F;         /* Azul marinho profundo para títulos e texto forte */
+  --text-headings: #16324F;
+  --text-body: #475569;         /* Parágrafos suaves e nítidos */
+  --text-muted: #64748B;
+
+  /* Bordas e Sombras */
+  --border-subtle: #E2E8F0;
+  --border-green: #C5E1A5;
+  --shadow-sm: 0 3px 10px rgba(22, 50, 79, 0.05);
+  --shadow-md: 0 8px 24px rgba(22, 50, 79, 0.08);
+  --shadow-lg: 0 16px 36px rgba(22, 50, 79, 0.12);
+  --shadow-button: 0 4px 14px rgba(141, 198, 63, 0.40);
+  --shadow-blue-btn: 0 4px 14px rgba(22, 50, 79, 0.35);
+
+  /* Raios de Borda */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Tipografia */
+  --font-display: 'Fredoka', cursive, sans-serif;
+  --font-body: 'Poppins', 'Readex Pro', -apple-system, sans-serif;
+
+  --transition: all 0.25s ease;
+}
+
+/* Reset Global */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-headings);
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+/* ==========================================================================
+   TOPBAR DE ANÚNCIO
+   ========================================================================== */
+.topbar-petsalute {
+  background-color: var(--ps-blue);
+  color: #FFFFFF;
+  padding: 8px 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar-item i {
+  color: var(--ps-green);
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   HEADER COM LOGO OFICIAL
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-white);
+  box-shadow: 0 2px 10px rgba(22, 50, 79, 0.06);
+  padding: 12px 0;
+  transition: var(--transition);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+}
+
+.brand-logo-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ps-blue);
+  padding: 4px 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--ps-green);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ==========================================================================
+   BOTÕES COM AS CORES OFICIAIS
+   ========================================================================== */
+.btn-ps {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.btn-ps-green {
+  background-color: var(--ps-green);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-button);
+}
+
+.btn-ps-green:hover {
+  background-color: var(--ps-green-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(141, 198, 63, 0.5);
+}
+
+.btn-ps-blue {
+  background-color: var(--ps-blue);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-blue-btn);
+}
+
+.btn-ps-blue:hover {
+  background-color: var(--ps-blue-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(22, 50, 79, 0.45);
+}
+
+.btn-ps-golden {
+  background-color: var(--ps-golden);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(229, 152, 55, 0.35);
+}
+
+.btn-ps-golden:hover {
+  background-color: #d18529;
+  transform: translateY(-2px);
+}
+
+.btn-ps-outline {
+  background: transparent;
+  color: var(--ps-blue);
+  border: 1.5px solid var(--border-subtle);
+}
+
+.btn-ps-outline:hover {
+  border-color: var(--ps-green);
+  color: var(--ps-green-dark);
+  background: var(--ps-green-light);
+}
+
+.mobile-toggle {
+  display: none;
+  background: #f1f5f9;
+  border-radius: 8px;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--ps-blue);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+/* ==========================================================================
+   HERO SECTION COM O GOLDEN RETRIEVER & TIGELA
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  padding: 50px 0 40px;
+  background: radial-gradient(circle at top right, #EBF6DC 0%, transparent 60%),
+              radial-gradient(circle at bottom left, #EBF1F7 0%, transparent 50%),
+              var(--bg-page);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hero-tag {
+  background: var(--ps-green-light);
+  color: var(--ps-green-dark);
+  border: 1px solid var(--border-green);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-tag i {
+  color: var(--ps-green);
+}
+
+.hero-title {
+  font-size: clamp(2.1rem, 3.8vw, 3.1rem);
+  color: var(--ps-blue);
+  line-height: 1.15;
+}
+
+.hero-title span {
+  color: var(--ps-green);
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.hero-media-wrap {
+  position: relative;
+}
+
+.hero-image-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 6px solid white;
+  background: #F8FAF4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-card img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  object-position: center 15%;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.hero-image-card:hover img {
+  transform: scale(1.02);
+}
+
+/* Badges Flutuantes */
+.hero-float-badge {
+  position: absolute;
+  background: white;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--border-subtle);
+  z-index: 10;
+}
+
+.badge-top-right {
+  top: -12px;
+  right: -12px;
+}
+
+.badge-bottom-left {
+  bottom: -12px;
+  left: -12px;
+}
+
+.float-badge-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--ps-green-light);
+  color: var(--ps-green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.float-badge-text h5 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ps-blue);
+}
+
+.float-badge-text p {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   BARRA DE 3 DESTAQUES (GRID DE CONFIANÇA)
+   ========================================================================== */
+.features-bar-section {
+  padding: 24px 0 44px;
+}
+
+.features-3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.feature-box-petsalute {
+  background: var(--bg-white);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.feature-box-petsalute:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--ps-green);
+}
+
+.feature-box-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--ps-green-light);
+  color: var(--ps-green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.feature-box-text h4 {
+  font-size: 0.98rem;
+  color: var(--ps-blue);
+  margin-bottom: 2px;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.feature-box-text p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   BANNER DESTAQUE FLUTUANTE AZUL PETRÓLEO
+   ========================================================================== */
+.blue-banner-highlight {
+  background: var(--ps-blue);
+  border-radius: var(--radius-md);
+  padding: 26px 36px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 50px;
+  background-image: radial-gradient(circle at right, rgba(141, 198, 63, 0.2) 0%, transparent 60%);
+}
+
+.blue-banner-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.blue-banner-icon {
+  font-size: 2.6rem;
+  color: var(--ps-green);
+}
+
+.blue-banner-text h3 {
+  color: white;
+  font-size: 1.35rem;
+  margin-bottom: 2px;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.blue-banner-text p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   CALCULADORA NUTRICIONAL
+   ========================================================================== */
+.section-calculator {
+  padding: 60px 0;
+  background: var(--bg-white);
+}
+
+.section-head-center {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 36px;
+}
+
+.section-tag {
+  color: var(--ps-green-dark);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.section-title {
+  font-size: clamp(1.7rem, 3.2vw, 2.3rem);
+  color: var(--ps-blue);
+  margin-bottom: 8px;
+}
+
+.calculator-card-petsalute {
+  background: var(--bg-page);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  box-shadow: var(--shadow-sm);
+}
+
+.calc-inputs-side {
+  padding: 32px;
+}
+
+.calc-group {
+  margin-bottom: 20px;
+}
+
+.calc-label {
+  display: block;
+  font-weight: 600;
+  color: var(--ps-blue);
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.species-buttons-row, .activity-buttons-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.activity-buttons-row {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.calc-select-btn {
+  background: white;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.calc-select-btn i {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.calc-select-btn span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ps-blue);
+}
+
+.calc-select-btn.active, .calc-select-btn:hover {
+  border-color: var(--ps-green);
+  background: var(--ps-green-light);
+}
+
+.calc-select-btn.active i, .calc-select-btn:hover i {
+  color: var(--ps-green-dark);
+}
+
+.weight-slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.weight-number-highlight {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ps-green-dark);
+  font-family: var(--font-display);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background: var(--ps-green);
+  box-shadow: 0 0 8px rgba(141, 198, 63, 0.6);
+}
+
+/* Lado do Resultado da Calculadora */
+.calc-results-side {
+  background: var(--ps-blue);
+  color: white;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result-card-inner {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.result-grams {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--ps-green);
+  font-family: var(--font-display);
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.result-grams span {
+  font-size: 1rem;
+  color: white;
+  font-family: var(--font-body);
+}
+
+/* ==========================================================================
+   VITRINE DE REFEIÇÕES GOURMET
+   ========================================================================== */
+.section-products {
+  padding: 60px 0;
+}
+
+.products-grid-petsalute {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.product-card-petsalute {
+  background: var(--bg-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-petsalute:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--ps-green);
+}
+
+.product-image-container {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-seal-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--ps-green);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.product-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card-title {
+  font-size: 1.15rem;
+  color: var(--ps-blue);
+  margin-bottom: 6px;
+}
+
+.product-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-body);
+  margin-bottom: 12px;
+  line-height: 1.45;
+}
+
+.product-ingredients-box {
+  background: var(--bg-page);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  color: var(--ps-blue);
+  margin-bottom: 14px;
+}
+
+.product-card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* ==========================================================================
+   COMPARATIVO VISUAL
+   ========================================================================== */
+.section-comparison {
+  padding: 60px 0;
+  background: var(--bg-white);
+}
+
+.comparison-grid-petsalute {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.comp-box-natural {
+  background: var(--ps-green-light);
+  border: 2px solid var(--ps-green);
+  border-radius: var(--radius-md);
+  padding: 28px;
+}
+
+.comp-box-dry {
+  background: var(--bg-page);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 28px;
+}
+
+.comp-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.comp-title-row h3 {
+  font-size: 1.25rem;
+}
+
+.comp-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.comp-item-single {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+}
+
+.comp-item-single i {
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.comp-box-natural .comp-item-single i {
+  color: var(--ps-green-dark);
+}
+
+.comp-box-dry .comp-item-single i {
+  color: #DC2626;
+}
+
+/* ==========================================================================
+   DEPOIMENTOS & FAQ
+   ========================================================================== */
+.testimonials-section {
+  padding: 60px 0;
+}
+
+.testimonials-grid-petsalute {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial-card-single {
+  background: var(--bg-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-stars {
+  color: var(--ps-golden);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 2px;
+}
+
+.testimonial-text {
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  line-height: 1.55;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.testimonial-author-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-avatar-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--ps-green);
+}
+
+.author-name-title h5 {
+  font-size: 0.85rem;
+  color: var(--ps-blue);
+}
+
+.author-name-title span {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.faq-section {
+  padding: 60px 0;
+  background: var(--bg-white);
+}
+
+.faq-list-petsalute {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-card-item {
+  background: var(--bg-page);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.faq-card-question {
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ps-blue);
+  text-align: left;
+}
+
+.faq-card-question i {
+  color: var(--ps-green-dark);
+  transition: transform 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.faq-card-item.active .faq-card-question i {
+  transform: rotate(180deg);
+}
+
+.faq-card-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 20px;
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.55;
+}
+
+.faq-card-item.active .faq-card-answer {
+  max-height: 250px;
+  padding-bottom: 16px;
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== */
+.site-footer-petsalute {
+  background: var(--ps-blue);
+  color: white;
+  padding: 50px 0 20px;
+  font-size: 0.85rem;
+}
+
+.footer-grid-4 {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col-title {
+  color: var(--ps-green);
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links-list a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links-list a:hover {
+  color: var(--ps-green);
+  padding-left: 4px;
+}
+
+.footer-bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.78rem;
+}
+
+/* WhatsApp Flutuante */
+.whatsapp-float-green {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: var(--transition);
+}
+
+.whatsapp-float-green:hover {
+  transform: scale(1.08);
+  color: white;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE MOBILE
+   ========================================================================== */
+@media (max-width: 992px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 30px; }
+  .features-3-grid { grid-template-columns: 1fr; }
+  .calculator-card-petsalute { grid-template-columns: 1fr; }
+  .products-grid-petsalute { grid-template-columns: 1fr 1fr; }
+  .comparison-grid-petsalute { grid-template-columns: 1fr; }
+  .testimonials-grid-petsalute { grid-template-columns: 1fr; }
+  .footer-grid-4 { grid-template-columns: 1fr 1fr; }
+  
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    padding: 20px 24px;
+    box-shadow: 0 10px 25px rgba(22, 50, 79, 0.1);
+    border-top: 1px solid var(--border-subtle);
+    gap: 16px;
+  }
+  .nav-links.mobile-open {
+    display: flex;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+  .header-actions .btn-ps {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  html { font-size: 15px; }
+  
+  .topbar-petsalute {
+    padding: 6px 0;
+    font-size: 0.72rem;
+  }
+  .topbar-content {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .site-header {
+    padding: 8px 0;
+  }
+  .brand-logo-img {
+    height: 38px;
+  }
+
+  .hero-section {
+    padding: 30px 0 25px;
+  }
+  .hero-title {
+    font-size: 1.85rem;
+    line-height: 1.2;
+  }
+  .hero-desc {
+    font-size: 0.92rem;
+  }
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-ctas .btn-ps {
+    width: 100%;
+  }
+  .hero-image-card img {
+    height: 280px;
+  }
+  
+  .hero-float-badge {
+    padding: 8px 12px;
+  }
+  .badge-top-right {
+    top: -8px;
+    right: -8px;
+  }
+  .badge-bottom-left {
+    bottom: -8px;
+    left: -8px;
+  }
+  .float-badge-text h5 {
+    font-size: 0.78rem;
+  }
+  .float-badge-text p {
+    font-size: 0.68rem;
+  }
+
+  .blue-banner-highlight {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 20px;
+  }
+  .blue-banner-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .blue-banner-icon {
+    font-size: 2rem;
+  }
+  .blue-banner-text h3 {
+    font-size: 1.15rem;
+  }
+  .blue-banner-highlight .btn-ps {
+    width: 100%;
+  }
+
+  .calc-inputs-side, .calc-results-side {
+    padding: 20px 16px;
+  }
+  .species-buttons-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .activity-buttons-row {
+    grid-template-columns: 1fr;
+  }
+  .result-grams {
+    font-size: 2rem;
+  }
+
+  .products-grid-petsalute {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid-4 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
