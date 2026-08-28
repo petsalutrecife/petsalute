@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (whatsappCta) {
       const petType = calcState.species === 'dog' ? 'Cão' : 'Gato';
       const msg = `Olá Pet Salute! Calculei a porção no site para meu ${petType} de ${calcState.weight}kg (atividade: ${calcState.activity}). A porção recomendada foi de ${gramsPerDay}g/dia. Gostaria de receber mais informações e montar o plano!`;
-      whatsappCta.href = `https://wa.me/5581999999999?text=${encodeURIComponent(msg)}`;
+      whatsappCta.href = `https://wa.me/5581971000611?text=${encodeURIComponent(msg)}`;
     }
   }
 
