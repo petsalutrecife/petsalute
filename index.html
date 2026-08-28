@@ -208,15 +208,33 @@
           </div>
 
           <div class="calc-group">
+            <label class="calc-label">2. Idade / Fase da Vida:</label>
+            <div class="age-buttons-row">
+              <button type="button" class="calc-select-btn pet-age-btn" data-age="puppy">
+                <i class="fas fa-baby"></i>
+                <span>Filhote 🍼</span>
+              </button>
+              <button type="button" class="calc-select-btn pet-age-btn active" data-age="adult">
+                <i class="fas fa-paw"></i>
+                <span>Adulto 🐕</span>
+              </button>
+              <button type="button" class="calc-select-btn pet-age-btn" data-age="senior">
+                <i class="fas fa-heart"></i>
+                <span>Idoso 🧓</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="calc-group">
             <div class="weight-slider-header">
-              <label class="calc-label" style="margin-bottom: 0;">2. Peso Atual do Pet:</label>
+              <label class="calc-label" style="margin-bottom: 0;">3. Peso Atual do Pet:</label>
               <span class="weight-number-highlight" id="weight-display-val">10 kg</span>
             </div>
             <input type="range" id="pet-weight-range" min="1" max="60" step="0.5" value="10" />
           </div>
 
           <div class="calc-group" style="margin-bottom: 0;">
-            <label class="calc-label">3. Nível de Atividade Física:</label>
+            <label class="calc-label">4. Nível de Atividade Física:</label>
             <div class="activity-buttons-row">
               <button type="button" class="calc-select-btn pet-act-btn" data-act="low">
                 <i class="fas fa-couch"></i>

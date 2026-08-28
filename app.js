@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // 1. CALCULADORA NUTRICIONAL INTERATIVA
   const speciesBtns = document.querySelectorAll('.pet-species-btn');
+  const ageBtns = document.querySelectorAll('.pet-age-btn');
   const activityBtns = document.querySelectorAll('.pet-act-btn');
   const weightRange = document.getElementById('pet-weight-range');
   const weightDisplayVal = document.getElementById('weight-display-val');
@@ -15,8 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let calcState = {
     species: 'dog',
+    age: 'adult',
     weight: 10,
     activity: 'moderate'
+  };
+
+  const ageLabels = {
+    puppy: 'Filhote',
+    adult: 'Adulto',
+    senior: 'Idoso'
+  };
+
+  const activityLabels = {
+    low: 'Calmo',
+    moderate: 'Moderado',
+    high: 'Atleta'
   };
 
   function updateCalculation() {
@@ -26,11 +40,26 @@ document.addEventListener('DOMContentLoaded', () => {
       basePercent = 0.05; // 5% para felinos
     }
 
-    if (calcState.activity === 'low') basePercent *= 0.85;
-    if (calcState.activity === 'high') basePercent *= 1.25;
+    // Fator de Idade
+    let ageFactor = 1.0;
+    if (calcState.age === 'puppy') ageFactor = 1.40; // Maior demanda energética para crescimento
+    if (calcState.age === 'senior') ageFactor = 0.88; // Menor gasto basal sênior
 
-    const gramsPerDay = Math.round(calcState.weight * basePercent * 1000);
-    const mealCount = calcState.species === 'cat' ? 3 : 2;
+    // Fator de Atividade
+    let activityFactor = 1.0;
+    if (calcState.activity === 'low') activityFactor = 0.88;
+    if (calcState.activity === 'high') activityFactor = 1.22;
+
+    const gramsPerDay = Math.round(calcState.weight * basePercent * ageFactor * activityFactor * 1000);
+
+    // Divisão de Refeições
+    let mealCount = 2;
+    if (calcState.age === 'puppy') {
+      mealCount = calcState.species === 'cat' ? 4 : 3;
+    } else if (calcState.species === 'cat') {
+      mealCount = 3;
+    }
+
     const gramsPerMeal = Math.round(gramsPerDay / mealCount);
 
     if (gramsResult) {
@@ -43,7 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (whatsappCta) {
       const petType = calcState.species === 'dog' ? 'Cão' : 'Gato';
-      const msg = `Olá Pet Salute! Calculei a porção no site para meu ${petType} de ${calcState.weight}kg (atividade: ${calcState.activity}). A porção recomendada foi de ${gramsPerDay}g/dia. Gostaria de receber mais informações e montar o plano!`;
+      const ageText = ageLabels[calcState.age] || 'Adulto';
+      const actText = activityLabels[calcState.activity] || 'Moderado';
+      const msg = `Olá Pet Salute! Calculei a porção no site para meu ${petType} (${ageText}, ${calcState.weight}kg, nível de atividade: ${actText}). A porção recomendada foi de ${gramsPerDay}g/dia (${mealCount}x de ${gramsPerMeal}g). Gostaria de receber mais informações e montar o cardápio natural!`;
       whatsappCta.href = `https://wa.me/5581971000611?text=${encodeURIComponent(msg)}`;
     }
   }
@@ -64,6 +95,16 @@ document.addEventListener('DOMContentLoaded', () => {
         weightRange.max = "60";
       }
 
+      updateCalculation();
+    });
+  });
+
+  // Event Listeners Idade
+  ageBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      ageBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      calcState.age = btn.getAttribute('data-age');
       updateCalculation();
     });
   });

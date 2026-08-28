@@ -566,13 +566,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9rem;
 }
 
-.species-buttons-row, .activity-buttons-row {
+.species-buttons-row, .activity-buttons-row, .age-buttons-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
-.activity-buttons-row {
+.activity-buttons-row, .age-buttons-row {
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -1136,7 +1136,7 @@ input[type="range"]::-webkit-slider-thumb {
   .species-buttons-row {
     grid-template-columns: 1fr 1fr;
   }
-  .activity-buttons-row {
+  .activity-buttons-row, .age-buttons-row {
     grid-template-columns: 1fr;
   }
   .result-grams {
