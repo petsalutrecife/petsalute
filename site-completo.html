@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Salute – Comida Saudável para Pets | Alimentação Natural</title>
+  <meta name="description" content="Pet Salute é alimentação natural de verdade para cães e gatos. Ingredientes 100% naturais, cozimento brando no vapor e acompanhamento veterinário especializado.">
+  <meta name="keywords" content="Pet Salute, Alimentação Natural Pets, Comida Saudável para Pets, Nutrição Canina Recife, Comida de Verdade Cães, @petsaluteoficial">
+  <meta property="og:title" content="Pet Salute – Comida Saudável para Pets">
+  <meta property="og:description" content="Alimentação natural é para todos? Conheça nossos cardápios frescos e balanceados.">
+  <meta property="og:image" content="imagem.jpg">
+
+  <!-- Favicon Oficial Pet Salute -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Google Fonts: Fredoka & Poppins / Readex Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS Customizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== TOPBAR DE ANÚNCIO ==================== -->
+  <div class="topbar-petsalute">
+    <div class="container topbar-content">
+      <div class="topbar-item">
+        <i class="fas fa-heart"></i>
+        <span>Alimentação natural de verdade: comida limpa, fresca e viva</span>
+      </div>
+      <div class="topbar-item">
+        <i class="fas fa-truck"></i>
+        <span>Entregas programadas e suporte veterinário especializado</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Logo Oficial Pet Salute com Transparência -->
+      <a href="#" class="brand-logo-wrap" aria-label="Pet Salute Início">
+        <img src="logo-petsalute.png" alt="Pet Salute - Comida Saudável para Pets" class="brand-logo-img" />
+      </a>
+
+      <!-- Menu Principal -->
+      <nav class="nav-links">
+        <a href="#beneficios" class="nav-link">Benefícios</a>
+        <a href="#calculadora" class="nav-link">Calculadora Nutricional</a>
+        <a href="#cardapio" class="nav-link">Nossas Dietas</a>
+        <a href="#comparativo" class="nav-link">Por Que Mudar?</a>
+        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Botões de Ação -->
+      <div class="header-actions">
+        <a href="#calculadora" class="btn-ps btn-ps-green">
+          <i class="fas fa-calculator"></i> Simular Dieta
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION COM O GOLDEN RETRIEVER ==================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag">
+          <i class="fas fa-heart"></i> Alimentação natural é para todos?
+        </span>
+        <h1 class="hero-title">
+          A verdadeira saúde do seu pet começa no <span>prato</span>.
+        </h1>
+        <p class="hero-desc">
+          Refeições completas, frescas e cozidas no vapor com cortes nobres de frango, carne, cenoura fresca, brócolis e superalimentos. 100% natural e balanceado.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#calculadora" class="btn-ps btn-ps-green">
+            <i class="fas fa-calculator"></i> Calcular Porção Diária
+          </a>
+          <a href="https://wa.me/5581971000611?text=Ol%C3%A1%20Pet%20Salute!%20Gostaria%20de%20montar%20um%20card%C3%A1pio%20natural%20para%20o%20meu%20pet." target="_blank" class="btn-ps btn-ps-blue">
+            <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-media-wrap">
+        <!-- Foto Oficial do Golden Retriever perfeitamente enquadrada -->
+        <div class="hero-image-card">
+          <img src="imagem.jpg" alt="Alimentação Natural Pet Salute" class="hero-golden-img" />
+        </div>
+
+        <!-- Badges Flutuantes -->
+        <div class="hero-float-badge badge-top-right">
+          <div class="float-badge-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <div class="float-badge-text">
+            <h5>+75% de Hidratação</h5>
+            <p>Protege os rins e a bexiga</p>
+          </div>
+        </div>
+
+        <div class="hero-float-badge badge-bottom-left">
+          <div class="float-badge-icon" style="background: #EBF1F7; color: #16324F;">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="float-badge-text">
+            <h5>Zero Conservantes</h5>
+            <p>100% comida limpa e viva</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BARRA DE 3 DESTAQUES (GRID DE CONFIANÇA) ==================== -->
+  <section class="features-bar-section" id="beneficios">
+    <div class="container">
+      <div class="features-3-grid">
+        <div class="feature-box-petsalute">
+          <div class="feature-box-icon">
+            <i class="fas fa-snowflake"></i>
+          </div>
+          <div class="feature-box-text">
+            <h4>Entrega Rápida & Congelada</h4>
+            <p>Chega perfeitamente congelada na sua casa em embalagens a vácuo práticas.</p>
+          </div>
+        </div>
+
+        <div class="feature-box-petsalute">
+          <div class="feature-box-icon" style="background: #FEF6EC; color: #E59837;">
+            <i class="fas fa-carrot"></i>
+          </div>
+          <div class="feature-box-text">
+            <h4>Ingredientes de Consumo Humano</h4>
+            <p>Carnes inspecionadas, legumes frescos e superalimentos sem subprodutos.</p>
+          </div>
+        </div>
+
+        <div class="feature-box-petsalute">
+          <div class="feature-box-icon" style="background: #EBF1F7; color: #16324F;">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <div class="feature-box-text">
+            <h4>Formulado por Veterinários</h4>
+            <p>Suplementação balanceada com vitaminas quelatadas e minerais nobres.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BANNER DESTAQUE AZUL PETRÓLEO ==================== -->
+  <section class="container">
+    <div class="blue-banner-highlight">
+      <div class="blue-banner-info">
+        <div class="blue-banner-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <div class="blue-banner-text">
+          <h3>Monte a Dieta Ideal do Seu Pet</h3>
+          <p>Descubra a quantidade exata de gramas e receba um plano nutricional sob medida.</p>
+        </div>
+      </div>
+      <a href="#calculadora" class="btn-ps btn-ps-green">
+        CALCULAR AGORA <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== CALCULADORA NUTRICIONAL ==================== -->
+  <section class="section-calculator" id="calculadora">
+    <div class="container">
+      <div class="section-head-center">
+        <span class="section-tag"><i class="fas fa-calculator"></i> Ferramenta Interativa</span>
+        <h2 class="section-title">Calculadora de Porção Diária</h2>
+        <p class="section-subtitle">Informe os dados do seu pet para calcular a quantidade recomendada por dia.</p>
+      </div>
+
+      <div class="calculator-card-petsalute">
+        <!-- Lado dos Inputs -->
+        <div class="calc-inputs-side">
+          <div class="calc-group">
+            <label class="calc-label">1. Escolha a Espécie:</label>
+            <div class="species-buttons-row">
+              <button type="button" class="calc-select-btn pet-species-btn active" data-sp="dog">
+                <i class="fas fa-dog"></i>
+                <span>Cachorro 🐶</span>
+              </button>
+              <button type="button" class="calc-select-btn pet-species-btn" data-sp="cat">
+                <i class="fas fa-cat"></i>
+                <span>Gato 🐱</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">2. Idade / Fase da Vida:</label>
+            <div class="age-buttons-row">
+              <button type="button" class="calc-select-btn pet-age-btn" data-age="puppy">
+                <i class="fas fa-baby"></i>
+                <span>Filhote 🍼</span>
+              </button>
+              <button type="button" class="calc-select-btn pet-age-btn active" data-age="adult">
+                <i class="fas fa-paw"></i>
+                <span>Adulto 🐕</span>
+              </button>
+              <button type="button" class="calc-select-btn pet-age-btn" data-age="senior">
+                <i class="fas fa-heart"></i>
+                <span>Idoso 🧓</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <div class="weight-slider-header">
+              <label class="calc-label" style="margin-bottom: 0;">3. Peso Atual do Pet:</label>
+              <span class="weight-number-highlight" id="weight-display-val">10 kg</span>
+            </div>
+            <input type="range" id="pet-weight-range" min="1" max="60" step="0.5" value="10" />
+          </div>
+
+          <div class="calc-group" style="margin-bottom: 0;">
+            <label class="calc-label">4. Nível de Atividade Física:</label>
+            <div class="activity-buttons-row">
+              <button type="button" class="calc-select-btn pet-act-btn" data-act="low">
+                <i class="fas fa-couch"></i>
+                <span>Calmo</span>
+              </button>
+              <button type="button" class="calc-select-btn pet-act-btn active" data-act="moderate">
+                <i class="fas fa-walking"></i>
+                <span>Moderado</span>
+              </button>
+              <button type="button" class="calc-select-btn pet-act-btn" data-act="high">
+                <i class="fas fa-running"></i>
+                <span>Atleta</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado do Resultado -->
+        <div class="calc-results-side">
+          <div>
+            <h3 style="color: white; font-size: 1.4rem; margin-bottom: 6px;">Resultado da Nutrição</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Porção diária personalizada estimada:</p>
+          </div>
+
+          <div class="result-card-inner">
+            <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--ps-green); font-weight: 700;">Recomendação Diária</span>
+            <div class="result-grams" id="calc-grams-result">350 <span>g / dia</span></div>
+            <p style="font-size: 0.85rem; color: rgba(255,255,255,0.85); margin-bottom: 0;" id="calc-meals-split">
+              Dividir em 2 refeições diárias de 175g.
+            </p>
+          </div>
+
+          <a href="#" id="calc-whatsapp-btn" target="_blank" class="btn-ps btn-ps-green" style="width: 100%;">
+            <i class="fab fa-whatsapp"></i> Pedir Este Cardápio no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VITRINE DE DIETAS ==================== -->
+  <section class="section-products" id="cardapio">
+    <div class="container">
+      <div class="section-head-center">
+        <span class="section-tag">Cardápio Completo</span>
+        <h2 class="section-title">Nossas Refeições Artesanais</h2>
+        <p class="section-subtitle">Pratos balanceados com carnes nobres, legumes cozidos a vapor e superalimentos.</p>
+      </div>
+
+      <div class="products-grid-petsalute">
+        <!-- Produto 1 -->
+        <div class="product-card-petsalute">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=700&q=80" alt="Bovino com Abóbora" />
+            <span class="product-seal-badge">Mais Pedido</span>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Bovino Prime com Abóbora</h3>
+            <p class="product-card-desc">Cortes magros de patinho bovino, abóbora cabotiá assada, chia e espinafre fresco.</p>
+            <div class="product-ingredients-box">
+              <strong>Ingredientes:</strong> Carne bovina, abóbora, espinafre, semente de chia, óleo de linhaça e minerais quelatados.
+            </div>
+            <div class="product-card-footer">
+              <span style="font-weight: 700; color: var(--ps-green-dark); font-size: 0.9rem;">100g, 250g e 500g</span>
+              <a href="https://wa.me/5581971000611?text=Ol%C3%A1%20Pet%20Salute!%20Quero%20pedir%20a%20receita%20Bovino%20Prime%20com%20Ab%C3%B3bora." target="_blank" class="btn-ps btn-ps-green" style="padding: 8px 18px; font-size: 0.85rem;">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="product-card-petsalute">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Frango com Cúrcuma" />
+            <span class="product-seal-badge">Anti-inflamatório</span>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Frango Vitalidade & Cúrcuma</h3>
+            <p class="product-card-desc">Peito de frango selecionado, cenoura, abobrinha e o poder antioxidante da cúrcuma pura.</p>
+            <div class="product-ingredients-box">
+              <strong>Ingredientes:</strong> Peito de frango, cenoura, abobrinha, cúrcuma, azeite extravirgem e vitaminas.
+            </div>
+            <div class="product-card-footer">
+              <span style="font-weight: 700; color: var(--ps-green-dark); font-size: 0.9rem;">100g, 250g e 500g</span>
+              <a href="https://wa.me/5581971000611?text=Ol%C3%A1%20Pet%20Salute!%20Quero%20pedir%20a%20receita%20Frango%20Vitalidade." target="_blank" class="btn-ps btn-ps-green" style="padding: 8px 18px; font-size: 0.85rem;">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="product-card-petsalute">
+          <div class="product-image-container">
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=700&q=80" alt="Suíno Hipoalergênico" />
+            <span class="product-seal-badge" style="background: var(--ps-blue);">Hipoalergênico</span>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Suíno Fit Hipoalergênico</h3>
+            <p class="product-card-desc">Lombo suíno magro com batata-doce e brócolis para cães com sensibilidade ou alergias alimentares.</p>
+            <div class="product-ingredients-box">
+              <strong>Ingredientes:</strong> Lombo suíno, batata-doce roxa, brócolis, beterraba e taurina de alta absorção.
+            </div>
+            <div class="product-card-footer">
+              <span style="font-weight: 700; color: var(--ps-green-dark); font-size: 0.9rem;">100g, 250g e 500g</span>
+              <a href="https://wa.me/5581971000611?text=Ol%C3%A1%20Pet%20Salute!%20Quero%20pedir%20a%20receita%20Su%C3%ADno%20Fit." target="_blank" class="btn-ps btn-ps-green" style="padding: 8px 18px; font-size: 0.85rem;">
+                Pedir
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMPARATIVO DIRETO ==================== -->
+  <section class="section-comparison" id="comparativo">
+    <div class="container">
+      <div class="section-head-center">
+        <span class="section-tag">Comprovado por Veterinários</span>
+        <h2 class="section-title">Comida Natural vs. Ração Seca</h2>
+        <p class="section-subtitle">Veja os benefícios imediatos no organismo do seu animal:</p>
+      </div>
+
+      <div class="comparison-grid-petsalute">
+        <!-- Natural Pet Salute -->
+        <div class="comp-box-natural">
+          <div class="comp-title-row">
+            <i class="fas fa-check-circle" style="color: var(--ps-green-dark); font-size: 1.8rem;"></i>
+            <h3 style="color: var(--ps-blue);">Alimentação Natural Pet Salute</h3>
+          </div>
+          <div class="comp-items-list">
+            <div class="comp-item-single">
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>70% a 80% de hidratação:</strong> Protege os rins e previne problemas renais crônicos.
+              </div>
+            </div>
+            <div class="comp-item-single">
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>Mais de 90% de digestibilidade:</strong> Fezes menores, firmes e sem odor desagradável.
+              </div>
+            </div>
+            <div class="comp-item-single">
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>Zero químicos e corantes:</strong> Sem conservantes artificiais sintéticos (BHA/BHT).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ração Seca -->
+        <div class="comp-box-dry">
+          <div class="comp-title-row">
+            <i class="fas fa-times-circle" style="color: #DC2626; font-size: 1.8rem;"></i>
+            <h3 style="color: var(--ps-blue);">Ração Seca Ultraprocessada</h3>
+          </div>
+          <div class="comp-items-list">
+            <div class="comp-item-single">
+              <i class="fas fa-times"></i>
+              <div>
+                <strong>Apenas 10% de água:</strong> Mantém o pet cronicamente desidratado.
+              </div>
+            </div>
+            <div class="comp-item-single">
+              <i class="fas fa-times"></i>
+              <div>
+                <strong>Fezes volumosas e cheiro forte:</strong> Baixo aproveitamento biológico dos nutrientes.
+              </div>
+            </div>
+            <div class="comp-item-single">
+              <i class="fas fa-times"></i>
+              <div>
+                <strong>Massa extrusada industrial:</strong> Submetida a altas temperaturas com perda de vitaminas.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DEPOIMENTOS ==================== -->
+  <section class="testimonials-section" id="depoimentos">
+    <div class="container">
+      <div class="section-head-center">
+        <span class="section-tag">Depoimentos Reais</span>
+        <h2 class="section-title">O que dizem os tutores apaixonados</h2>
+      </div>
+
+      <div class="testimonials-grid-petsalute">
+        <div class="testimonial-card-single">
+          <div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Meu cão sofria com coceiras constantes e queda de pelo. Em menos de 1 mês de comida natural Pet Salute, a pele dele sarou totalmente! Estamos muito felizes."
+            </p>
+          </div>
+          <div class="testimonial-author-box">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Mariana Silva" class="author-avatar-img" />
+            <div class="author-name-title">
+              <h5>Mariana Silva</h5>
+              <span>Tutora do Bob (Bulldog Francês)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-single">
+          <div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "A praticidade das porções congeladas é perfeita. Só descongelo e sirvo. Meu gato come tudo e os exames de rotina vieram impecáveis!"
+            </p>
+          </div>
+          <div class="testimonial-author-box">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Lucas Ferraz" class="author-avatar-img" />
+            <div class="author-name-title">
+              <h5>Lucas Ferraz</h5>
+              <span>Tutor do Simba (Gato Siamês)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-single">
+          <div>
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Atendimento nota mil da equipe! Acompanham o peso do meu pet e adaptam as receitas sempre que necessário. Recomendo de olhos fechados."
+            </p>
+          </div>
+          <div class="testimonial-author-box">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Aline Rocha" class="author-avatar-img" />
+            <div class="author-name-title">
+              <h5>Aline Rocha</h5>
+              <span>Tutora da Mel (Golden Retriever)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ACORDEÃO ==================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-head-center">
+        <span class="section-tag">Tire Suas Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+      </div>
+
+      <div class="faq-list-petsalute">
+        <div class="faq-card-item active">
+          <button class="faq-card-question">
+            <span>Como é feita a transição da ração para a comida natural?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-card-answer">
+            A transição é feita gradualmente ao longo de 7 dias misturando a comida natural com a ração habitual para adaptação confortável do intestino. Nossa equipe envia o guia completo impresso junto com o seu pedido!
+          </div>
+        </div>
+
+        <div class="faq-card-item">
+          <button class="faq-card-question">
+            <span>Como devo descongelar as porções no dia a dia?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-card-answer">
+            Basta transferir a porção do freezer para a geladeira na véspera. Na hora de servir, você pode ofertar em temperatura ambiente ou aquecer levemente em banho-maria para liberar os aromas naturais.
+          </div>
+        </div>
+
+        <div class="faq-card-item">
+          <button class="faq-card-question">
+            <span>A comida já contém suplementação vitamínica?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-card-answer">
+            Sim! Nossas dietas são formuladas por veterinários nutrólogos e recebem mix mineral e vitamínico quelatado de alto aproveitamento biológico para suprir 100% das necessidades diárias.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer-petsalute">
+    <div class="container">
+      <div class="footer-grid-4">
+        <div>
+          <div class="brand-logo-wrap" style="margin-bottom: 16px;">
+            <img src="logo-petsalute-white.png" alt="Pet Salute" class="brand-logo-img" />
+          </div>
+          <p style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.6;">
+            Alimentação natural de alta qualidade para cães e gatos. Comida saudável, fresca e viva no prato do seu companheiro.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <div class="footer-links-list">
+            <a href="#beneficios">Benefícios</a>
+            <a href="#calculadora">Calculadora Nutricional</a>
+            <a href="#cardapio">Cardápio de Dietas</a>
+            <a href="#comparativo">Comparativo Ração</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Atendimento</h4>
+          <div class="footer-links-list">
+            <a href="https://wa.me/5581971000611" target="_blank"><i class="fab fa-whatsapp"></i> (81) 97100-0611</a>
+            <a href="https://www.instagram.com/petsaluteoficial" target="_blank"><i class="fab fa-instagram"></i> @petsaluteoficial</a>
+            <span style="color: rgba(255,255,255,0.75); font-size: 0.85rem;"><i class="fas fa-map-marker-alt"></i> Recife - PE e Região</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Horário</h4>
+          <p style="color: rgba(255,255,255,0.75); font-size: 0.85rem; line-height: 1.6;">
+            Segunda a Sexta: 08h às 18h<br>
+            Sábado: 08h às 13h<br>
+            Entregas programadas.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>© 2026 Pet Salute (@petsaluteoficial). Todos os direitos reservados.</span>
+        <span>Comida saudável para pets de verdade.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/5581971000611?text=Ol%C3%A1%20Pet%20Salute!%20Gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20a%20alimenta%C3%A7%C3%A3o%20natural." target="_blank" class="whatsapp-float-green" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

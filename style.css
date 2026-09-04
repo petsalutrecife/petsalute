@@ -1157,3 +1157,302 @@ input[type="range"]::-webkit-slider-thumb {
     text-align: center;
   }
 }
+
+/* ==========================================================================
+   PÁGINA TEMPORÁRIA / EM BREVE - PET SALUTE
+   ========================================================================== */
+.temp-header {
+  background: var(--bg-white);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.temp-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temp-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ps-blue-light);
+  color: var(--ps-blue);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(22, 50, 79, 0.15);
+}
+
+.temp-status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--ps-golden);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(229, 152, 55, 0.7);
+  animation: pulseDot 1.8s infinite;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(229, 152, 55, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(229, 152, 55, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(229, 152, 55, 0); }
+}
+
+.temp-hero-section {
+  padding: 60px 0 80px;
+  background: linear-gradient(135deg, #F8FAF4 0%, #EBF1F7 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.temp-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.temp-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.temp-main-title {
+  font-family: var(--font-display);
+  font-size: 2.7rem;
+  line-height: 1.15;
+  color: var(--text-dark);
+}
+
+.temp-main-title span {
+  color: var(--ps-green-dark);
+  position: relative;
+}
+
+.temp-main-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+.temp-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.temp-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(141, 198, 63, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.temp-feature-icon {
+  width: 38px;
+  height: 38px;
+  background: var(--ps-green-light);
+  color: var(--ps-green-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.temp-feature-text {
+  font-weight: 500;
+  color: var(--ps-blue);
+  font-size: 0.95rem;
+}
+
+/* Card Lead Capture & WhatsApp */
+.temp-actions-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.temp-card-box {
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--ps-green-light);
+  position: relative;
+}
+
+.temp-card-badge {
+  position: absolute;
+  top: -14px;
+  right: 24px;
+  background: var(--ps-golden);
+  color: #FFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.temp-form-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--ps-blue);
+  margin-bottom: 6px;
+}
+
+.temp-form-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.temp-form-group {
+  margin-bottom: 14px;
+}
+
+.temp-form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ps-blue);
+  margin-bottom: 6px;
+}
+
+.temp-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background: #F8FAF6;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.temp-input:focus {
+  border-color: var(--ps-green);
+  background: #FFF;
+  box-shadow: 0 0 0 3px rgba(141, 198, 63, 0.2);
+}
+
+.temp-btn-submit {
+  width: 100%;
+  background: var(--ps-green-dark);
+  color: #FFF;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  padding: 14px 20px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: var(--transition);
+  box-shadow: var(--shadow-button);
+}
+
+.temp-btn-submit:hover {
+  background: #235428;
+  transform: translateY(-2px);
+}
+
+.whatsapp-box-banner {
+  background: var(--ps-blue);
+  color: #FFF;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.whatsapp-box-banner h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whatsapp-box-banner p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.btn-whatsapp-pulse {
+  background: #25D366;
+  color: #FFF;
+  font-weight: 700;
+  font-family: var(--font-display);
+  padding: 14px 24px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  transition: var(--transition);
+}
+
+.btn-whatsapp-pulse:hover {
+  background: #20BA5A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.temp-success-msg {
+  display: none;
+  background: #E8F8F0;
+  border: 1px solid #A3E4D7;
+  color: #117A65;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  font-weight: 500;
+  margin-top: 14px;
+}
+
+.temp-admin-link {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+}
+
+.temp-admin-link a {
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+.temp-admin-link a:hover {
+  color: var(--ps-blue);
+}
+
+@media (max-width: 900px) {
+  .temp-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .temp-main-title {
+    font-size: 2.1rem;
+  }
+}
+
